@@ -7,6 +7,8 @@ require_relative "./fetcher"
 # To fetch the page found as the first result of searching google for "which university"...
 # 
 # > ReallyUseful.really_useful_method
+#
+# NOTE: There is a bug where the wrong item is returned. See #ReallyUseful for details.
 # --------------------
 
 class ReallyUseful

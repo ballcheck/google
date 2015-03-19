@@ -23,6 +23,14 @@ class GoogleSearch
 
   def self.get_first_item( query )
     search = search_web( query )
+
+    # FIXME: Google::Search::Web#first is a method mixed in from Enumerable.
+    # It does not return the first result. Instead it appears to enumerate
+    # over the items.
+    
+    # The above call to Google::Search::Web#response on line 17 appears to
+    # move the enumerator forward one step resulting in the 2nd item being
+    # assigned.
     item = search.first
 
     raise NoItemError unless item
