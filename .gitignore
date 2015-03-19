@@ -1,0 +1,19 @@
+# Ignore bundler config
+/.bundle
+
+# Ignore .gems folder
+/.gems
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+
+# vim tmp files
+*.swp
+*.swo
+
+# doc files
+/doc
