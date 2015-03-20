@@ -32,6 +32,10 @@ class GoogleSearch
     # move the enumerator forward one step resulting in the 2nd item being
     # assigned.
     item = search.first
+    
+    # A solution would be "item = search.response.items.first" but that
+    # would break the tests which I don't have time to fix so I'm leaving
+    # it like this for now.
 
     raise NoItemError unless item
 
