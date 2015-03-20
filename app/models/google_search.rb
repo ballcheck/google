@@ -42,4 +42,13 @@ class GoogleSearch
     return item
   end
 
+  def self.get_nth_item( query, n )
+    search = search_web( query )
+
+    item = search.response.items[n]
+
+    raise NoItemError unless item
+
+    return item
+  end
 end

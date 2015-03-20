@@ -27,4 +27,13 @@ class ReallyUseful
     # I presume by "click" on the first link we mean fetch the document itself
     return fetch_document( item.uri )
   end
+
+  def self.really_useful_method2( n )
+    # get the nth search result from google
+    query = "which university"
+    item = GoogleSearch.get_nth_item( query, n )
+
+    fetched_document = fetch_document( item.uri )
+    return { :uri => item.uri, :body => fetched_document }
+  end
 end
