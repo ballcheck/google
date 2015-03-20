@@ -4,6 +4,10 @@ require_relative "./fetcher"
 # --------------------
 # Example usage (working under Ruby 2.1.2 with RVM and Bundler)
 # 
+# You can run the few completed tests with:
+#
+# > bundle exec ruby test/runner.rb
+#
 # To fetch the page found as the first result of searching google for "which university"...
 # 
 # > ReallyUseful.really_useful_method
