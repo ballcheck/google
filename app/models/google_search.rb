@@ -42,6 +42,7 @@ class GoogleSearch
     return item
   end
 
+  # TODO: untested
   def self.get_nth_item( query, n )
     search = search_web( query )
 

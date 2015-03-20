@@ -28,6 +28,7 @@ class ReallyUseful
     return fetch_document( item.uri )
   end
 
+  # NOTE: this method is just to use in the Rails project.
   def self.really_useful_method2( n )
     # get the nth search result from google
     query = "which university"
